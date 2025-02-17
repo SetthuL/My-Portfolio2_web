@@ -159,16 +159,19 @@
     document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("home").classList.add("visible");
 });
-    function toggleSection(sectionId) {
+
+  function toggleSection(sectionId) {
   // Hide all sections
   const sections = document.querySelectorAll('main > section');
   sections.forEach(section => {
+    section.classList.add('hidden');
     section.classList.remove('visible');
   });
-  
-  // Showing the selected section
+
+  // Show the selected section
   const target = document.getElementById(sectionId);
   if (target) {
+    target.classList.remove('hidden');
     target.classList.add('visible');
   }
 
@@ -177,7 +180,7 @@
   links.forEach(link => {
     link.classList.remove('active');
   });
-  
+
   const activeLink = document.querySelector(`a[href='#${sectionId}']`);
   if (activeLink) {
     activeLink.classList.add('active');

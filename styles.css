@@ -20,6 +20,7 @@ body {
   line-height: 1.6;
   color: #333;
   font-size: 16px;
+  margin: 0;
 }
 
 header {
@@ -76,7 +77,7 @@ nav ul li a {
 
 section {
   padding: 20px;
-  max-width: 800px;
+  max-width: 1600px;
   margin: auto;
   background: linear-gradient(to right, #212225, #343535, #252e31);
   border-radius: 10px;
@@ -85,11 +86,11 @@ section {
   overflow: hidden;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out;
   color: #fff;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  padding-top: 8px;
 }
 section.visible {
-  opacity: 1;
+  max-height: 5000px;
+  opacity: 0.5s ease-in-out;
 }
 
 #my-journey {
@@ -103,6 +104,7 @@ section h3 {
   font-family: "Libre Baskerville", serif;
   margin-bottom: 1rem;
   color: #fff;
+  padding-top: 8px;
 }
 
 section h1 {
@@ -247,4 +249,6 @@ nav a.active {
 }
 html {
   scroll-behavior: smooth;
+  margin-top: 0;
+  padding-top: 0;
 }
