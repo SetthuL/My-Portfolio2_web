@@ -1,0 +1,205 @@
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #555;
+  --accent-color: #007BFF;
+  --bg-color: #f4f4f4;
+  --white: #fff;
+  --text-color: #333;
+  --transition-speed: 0.3s;
+  --max-width: 960px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+}
+
+ header {
+            background: #222;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+header img {
+    width: 190px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(53, 52, 52, 0.3);
+    transition: transform 0.3s ease-in-out;
+    }
+
+header img:hover {
+    transform: scale(1.1);
+    }
+
+
+nav {
+    background: #444;
+    padding: 10px 0;
+    text-align: center;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: linear-gradient(to right, #212225,#343535,#252e31);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            margin-top: 5px;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            color: #fff;
+        }
+
+section h1,
+section h2,
+section h3 {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+section h1 {
+  font-size: 2.5rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-speed) ease;
+}
+
+a.btn:hover {
+  background-color: var(--accent-color);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-left: 4px solid var(--primary-color);
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color var(--transition-speed) ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease;
+}
+
+form button:hover {
+  background-color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+.contact-links {
+  margin-bottom: 1rem;
+}
+
+.contact-links a {
+  margin: 0 10px;
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: color var(--transition-speed) ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
