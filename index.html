@@ -158,6 +158,8 @@
       </div>
         <p>&copy; 2025 Lange B Siphosethu Portfolio</p>
     </footer>
+
+    <button id="scrollToTopBtn">↑</button>
   
   <!-- Inline JavaScript to handle section toggling -->
   <script>
@@ -173,6 +175,23 @@
       if (target) {
         target.classList.remove('hidden');
       }
+      // The functionality of the scroll button
+    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            if (
+                    document.body.scrollTop > 100 ||
+                    document.documentElement.scrollTop > 100
+                ) {
+                scrollToTopBtn.style.display = "block";
+              } else {
+                scrollToTopBtn.style.display = "none";
+              }
+            };
+
+            scrollToTopBtn.onclick = function () {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            };
     }
   </script>
 </body>

@@ -56,13 +56,18 @@ nav ul {
         nav ul li {
             display: inline;
             margin: 0 15px;
+            background: none;    
+            border: none;
+            box-shadow: none;
         }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
+    background-color: transparent;
+
     }
 
 
@@ -202,4 +207,17 @@ footer {
 
 .contact-links a:hover {
   color: var(--accent-color);
+}
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3c3a3a;
+    color: #f9f9f6e6;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 18px;
 }
